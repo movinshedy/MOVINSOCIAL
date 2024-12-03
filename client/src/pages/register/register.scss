@@ -1,0 +1,130 @@
+.register {
+  height: 100vh;
+  background: linear-gradient(135deg, hwb(54 7% 4%), hsl(128, 95%, 34%)); /* Soft gradient for a modern look */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+
+  .card {
+    width: 60%; /* Slightly wider for better proportions */
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #fff;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(14, 26, 20, 0.1); /* Subtle shadow for depth */
+    min-height: 600px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(
+          rgba(233, 133, 3, 0.6),
+          #ddc80899
+        ),
+        url('../../assets/register.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      color: white;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+      h1 {
+        font-size: 48px;
+        line-height: 1.2;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      span {
+        font-size: 16px;
+        margin-top: 10px;
+        opacity: 0.9;
+      }
+
+      button {
+        width: 60%;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 25px; /* Rounded button */
+        background-color: white;
+        color: hsl(120, 94%, 37%);
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: hsl(345, 93%, 36%);
+          color: white;
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+      h1 {
+        color: #333;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input {
+          border: 1px solid lightgray;
+          border-radius: 8px; /* Rounded inputs */
+          padding: 15px 10px;
+          font-size: 16px;
+          transition: border-color 0.3s ease;
+
+          &:focus {
+            border-color: #938eef;
+            outline: none;
+          }
+        }
+
+        button {
+          width: 100%;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 25px; /* Rounded button */
+          background-color: hsl(320, 85%, 48%);
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: hsl(110, 95%, 41%);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
